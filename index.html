@@ -19,10 +19,27 @@
       <h1>Times Of The Day</h1>
     </header>
     <section>
-      <div id="msg">Testando...</div>
+      <div id="msg"></div>
       <div id="photo">
         <img id="image" src="./img/morning.png" alt="Photo of the day" />
       </div>
+      <div>
+        <p>
+          Birth year:
+          <input type="number" name="txtyear" id="txtyear" min="0" />
+        </p>
+        <p>
+          Sex:
+          <input type="radio" name="radsex" id="man" checked />
+          <label for="man">Male</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Female</label>
+        </p>
+        <p>
+          <input type="button" value="Verify" onclick="verify()" />
+        </p>
+      </div>
+      <div id="res">Fill in the above data to see the result.</div>
     </section>
     <footer>
       <p>
